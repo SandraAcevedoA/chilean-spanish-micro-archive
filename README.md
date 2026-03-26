@@ -1,93 +1,139 @@
-# chilean-spanish-micro-archive
+# Chilean Spanish Micro-Archive
+### *A bilingual annotated lexicon of Chilean Spanish terms with indigenous substrate*
 
+**Status:** Prototype · 6 entries · active development  
+**Maintainer:** Sandra D. Acevedo Alvarado · [acevedology.com](https://acevedology.com)  
+**License:** CC BY-NC-SA 4.0  
 
+---
 
-## Getting started
+## What this is
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+A small, carefully documented lexicon of Chilean Spanish words that carry Mapudungún, Quechua, or Aymara substrate — terms where meaning, class coding, and colonial history are compressed into everyday use.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+This is not a comprehensive dictionary. It is a **proof-of-concept dataset** designed to demonstrate:
 
-## Add your files
+- How culturally situated NLP evaluation data should be structured
+- What gets lost when indigenous-origin vocabulary is processed without cultural context
+- How a responsible dataset handles uncertainty (rather than hiding it)
 
-* [Create](https://docs.gitlab.com/user/project/repository/web_editor/#create-a-file) or [upload](https://docs.gitlab.com/user/project/repository/web_editor/#upload-a-file) files
-* [Add files using the command line](https://docs.gitlab.com/topics/git/add_files/#add-files-to-a-git-repository) or push an existing Git repository with the following command:
+Each entry is bilingual (EN/ES) and includes a **verification-as-claims layer**: etymologies are treated as objects with status, method, and sources — not as settled facts.
+
+---
+
+## Why this matters for NLP
+
+Large language models trained predominantly on English and standardized Spanish systematically underrepresent the cultural and sociolinguistic weight of Latin American vocabulary. This gap is not random — it reflects whose knowledge is considered data.
+
+Chilean Spanish is a particularly rich case: it contains hundreds of words from Mapudungún and Andean languages (Quechua, Aymara) that have been absorbed, resemantized, or stripped of their original meaning through colonial contact. LLMs typically:
+
+- Return the surface chilenismo meaning without indigenous etymology
+- Miss class-coded or historically charged dimensions of common words
+- Cannot identify when a term encodes colonial semantic violence (e.g. a sacred ritual word degraded to mean "gossip")
+- Conflate distinct indigenous-origin words under generic "regional variant" labels
+
+This archive is part of a larger research project on culturally situated NLP evaluation for Latin American Spanish. See: [NLPgap Research](https://acevedology.com/research.html)
+
+---
+
+## Corpus scope
+
+| Parameter | Value |
+|-----------|-------|
+| Languages documented | Chilean Spanish, Mapudungún, Quechua, Aymara |
+| Entry types | Lexical borrowings, semantic shifts, toponyms, polysemous terms |
+| Annotation | Bilingual (EN/ES), register, social coding, NLPgap relevance |
+| Verification | Claims-based (verified / unverified / disputed) |
+| Current entries | 6 (prototype) |
+| Target entries | 100+ |
+| Primary source | Native speaker corpus (S.A.A.) |
+
+---
+
+## Repository structure
 
 ```
-cd existing_repo
-git remote add origin https://gitlab.com/acevedos/chilean-spanish-micro-archive.git
-git branch -M main
-git push -uf origin main
+chilean-spanish-micro-archive/
+│
+├── README.md                  ← this file
+├── SCHEMA.md                  ← field definitions and controlled vocabulary
+├── METHODOLOGY.md             ← editorial decisions, verification protocol
+│
+├── data/
+│   ├── entries.csv            ← flat tabular format (coming soon)
+│   └── entries.json           ← structured format with claims (coming soon)
+│
+└── sources/
+    └── SOURCES.md             ← bibliography and verification status by source
 ```
 
-## Integrate with your tools
+---
 
-* [Set up project integrations](https://gitlab.com/acevedos/chilean-spanish-micro-archive/-/settings/integrations)
+## Schema overview
 
-## Collaborate with your team
+Each entry contains two layers:
 
-* [Invite team members and collaborators](https://docs.gitlab.com/user/project/members/)
-* [Create a new merge request](https://docs.gitlab.com/user/project/merge_requests/creating_merge_requests/)
-* [Automatically close issues from merge requests](https://docs.gitlab.com/user/project/issues/managing_issues/#closing-issues-automatically)
-* [Enable merge request approvals](https://docs.gitlab.com/user/project/merge_requests/approvals/)
-* [Set auto-merge](https://docs.gitlab.com/user/project/merge_requests/auto_merge/)
+**1. Lexical fields**
+- `term`, `language_of_origin`, `entry_type`
+- `original_meaning` (EN + ES)
+- `meaning_in_use` (EN + ES)
+- `register`, `encoded_social_meaning`, `typical_context`
+- `functional_translation_en`, `cultural_notes`
+- `nlpgap_relevance`, `source`
 
-## Test and Deploy
+**2. Etymology claims** (one or more per entry)
+- `claim_type`, `claim_text`
+- `verification_status`: `verified | unverified | disputed`
+- `verification_method`: `lexicographic | academic | corpus-attestation | mixed`
+- `sources` (list with edition/year where available)
+- `verification_note`
 
-Use the built-in continuous integration in GitLab.
+Full field definitions: see [SCHEMA.md](SCHEMA.md)
 
-* [Get started with GitLab CI/CD](https://docs.gitlab.com/ci/quick_start/)
-* [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/user/application_security/sast/)
-* [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/topics/autodevops/requirements/)
-* [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/user/clusters/agent/)
-* [Set up protected environments](https://docs.gitlab.com/ci/environments/protected_environments/)
+---
 
-***
+## Current entries
 
-# Editing this README
+| Term | Origin | Entry type | Status |
+|------|--------|------------|--------|
+| Piñén | Mapudungún | Lexical borrowing | etymology unverified |
+| Puma | Mapudungún | Lexical borrowing (global) | etymology unverified |
+| Cahuín | Mapudungún | Borrowing + semantic shift | etymology unverified |
+| Ñuñoa | Mapudungún | Toponym | etymology unverified |
+| Luche | Mapudungún / Quechua (disputed) | Polysemous term | species verified · etymology disputed |
+| Cochayuyo | Quechua | Borrowing via coastal culture | species verified · etymology unverified |
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+*Verification against primary sources (Augusta 1916, Catrileo 1996, Ayacucho Quechua dictionaries) is in progress.*
 
-## Suggestions for a good README
+---
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+## Verification triad
 
-## Name
-Choose a self-explaining name for your project.
+Following the methodology proposed in this project, etymological claims are evaluated against three source types:
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+1. **Lexicographic** — Mapudungún and Quechua dictionaries and grammars (Augusta 1916, Catrileo 1996, Zúñiga 2000, etc.)
+2. **Corpus attestation** — Real-use examples in press, recipes, institutional documents, Chilean Spanish corpora
+3. **Academic** — Peer-reviewed papers and theses for conflictive or high-stakes etymologies
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+A claim is `verified` if supported by at least one solid source; `disputed` if sources conflict; `unverified` if supported by native speaker knowledge but not yet confirmed in primary sources.
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+**Unverified ≠ wrong.** It means the claim is honest about where it stands.
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+---
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+## How to cite
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+```
+Acevedo Alvarado, Sandra D. (2025–). Chilean Spanish Micro-Archive: 
+A bilingual annotated lexicon with indigenous substrate. 
+Prototype dataset. acevedology.com. 
+https://gitlab.com/acevedos/chilean-spanish-micro-archive
+```
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+---
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+## Contact
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+Sandra D. Acevedo Alvarado  
+Independent Researcher · Culturally Situated AI Systems  
+[acevedology.com](https://acevedology.com) · [contact](https://acevedology.com/contact.html)
