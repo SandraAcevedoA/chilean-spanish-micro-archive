@@ -1,0 +1,620 @@
+{
+  "meta": {
+    "title": "Chilean Spanish Micro-Archive / Micro-Archivo de Español Chileno con Sustrato Indígena",
+    "description": "Bilingual annotated lexicon documenting Chilean Spanish terms with indigenous substrate (Mapudungún, Quechua, Aymara). Proof-of-concept for culturally situated NLP evaluation.",
+    "version": "0.3",
+    "entry_count": 24,
+    "curator": "Sandra Acevedo A.",
+    "curator_positionality": "Native Chilean Spanish speaker raised in Santiago with family roots spanning Puerto Varas, San Fernando, and Santiago. Background in Fine Arts Theory/History and Cultural Management (Universidad de Chile). Hispanic-Chilean (not Mapuche) — positionality is an explicit methodological datum, not a caveat.",
+    "methodology": "Anecdote-systematized curatorial proof-of-concept. Native speaker testimony treated as primary source with explicit positionality. Verification-as-claims layer: etymologies are treated as objects with status (verified/unverified/disputed), method, and sources. Negative evidence documented, not ignored.",
+    "nlpgap_framework": "Documents the gap between what LLMs return for Chilean indigenous-substrate vocabulary and what those terms actually carry in lived experience, social register, colonial history, and semantic evolution.",
+    "primary_sources": [
+      {
+        "short": "Lenz (1910)",
+        "full": "Lenz, Rodolfo (1910). Diccionario etimológico de las voces chilenas derivadas de lenguas indígenas americanas. Santiago: Universidad de Chile / Imprenta Universitaria. Biblioteca Nacional de Chile MC0038306.",
+        "url": "https://www.memoriachilena.gob.cl/602/w3-article-8193.html"
+      },
+      {
+        "short": "Manquilef (1911)",
+        "full": "Manquilef, Manuel (1911). Comentarios del pueblo araucano (La faz social). Santiago: Imprenta Cervantes. Anales de la Universidad de Chile tomo CXXVIII. Biblioteca Nacional de Chile MC0008915.",
+        "url": "https://www.memoriachilena.gob.cl/602/w3-article-8192.html"
+      },
+      {
+        "short": "Valdivia (1684)",
+        "full": "Valdivia, Luis de (1684). Arte y gramática general de la lengua que corre en todo el Reyno de Chile. Sevilla: Thomás López de Haro. Biblioteca Nacional de Chile MC0013038.",
+        "url": "https://www.memoriachilena.gob.cl/602/w3-article-8485.html"
+      }
+    ],
+    "secondary_sources": [
+      {
+        "short": "González Retamal (2018)",
+        "full": "González Retamal, Cristián (2018). Vitalidad y mortandad léxica de los mapuchismos. Universidad de Chile."
+      },
+      {
+        "short": "Valencia Alba (1977)",
+        "full": "Valencia Alba, Alba (1977). Voces amerindias en el español culto oral de Santiago de Chile. Boletín de Filología, Universidad de Chile (BFUC)."
+      }
+    ],
+    "repository": "https://gitlab.com/acevedos/chilean-spanish-micro-archive",
+    "last_updated": "2026-03-31",
+    "license": "CC BY 4.0"
+  },
+  "entries": [
+    {
+      "id": "CSM-001",
+      "término": "Piñén",
+      "origen": "Mapudungún",
+      "tipo": "préstamo léxico",
+      "significado_original": "Mugre corporal; piel muerta que se exfolia. Mapuche pigen = enfermedad como engranujada (Febrés vía Lenz).",
+      "uso_chileno": "Suciedad acumulada en la piel especialmente en niños; clase media-baja; niño que juega en la calle a patapelá.",
+      "registro": "Coloquial / familiar",
+      "capa_colonial": "Capa socioeconómica invisible: ausente en contextos de clase alta donde el mismo fenómeno se nomina de otra manera.",
+      "contexto_típico": "Antes del baño: 'a sacarse el piñén'",
+      "traducción_EN": "Body grime / dirt crust (no exact cultural equivalent)",
+      "NLPgap": "Alta — LLMs no documentan la carga socioeconómica del término",
+      "NLPgap_nivel": "high",
+      "fuente": "Lenz (1910) entrada 1104 p.894; González Retamal (2018); S.A.A. testimonio nativo",
+      "claims": [
+        {
+          "claim": "Origen mapudungún: pigen = enfermedad como engranujada",
+          "status": "verified",
+          "method": "Primary lexicographic source",
+          "sources": "Lenz (1910) entrada 1104. González Retamal (2018) confirma: piñén o piñín suciedad del cuerpo humano (de pigen enfermedad)."
+        }
+      ]
+    },
+    {
+      "id": "CSM-002",
+      "término": "Puma",
+      "origen": "Mapudungún",
+      "tipo": "préstamo léxico global",
+      "significado_original": "León de montaña. Mapuche pá·qi = puma / lion chileno (Valencia Alba vía Moesbach).",
+      "uso_chileno": "El animal; marca deportiva internacional — casi nadie sabe que la palabra es mapuche.",
+      "registro": "Neutro / transversal",
+      "capa_colonial": "Apropiación global de vocabulario indígena sin atribución; origen mapuche invisible a escala mundial.",
+      "contexto_típico": "Nombre del animal y de la marca deportiva global",
+      "traducción_EN": "Mountain lion / Puma",
+      "NLPgap": "Alta — LLMs asocian puma con marca/animal no con herencia lingüística mapuche",
+      "NLPgap_nivel": "high",
+      "fuente": "Valencia Alba (1977): pá·qi formante mapuche en análisis toponímico; S.A.A. testimonio nativo",
+      "claims": [
+        {
+          "claim": "Origen mapudungún: puma = mountain lion",
+          "status": "unverified",
+          "method": "Indirect lexicographic attestation + corpus",
+          "sources": "Valencia Alba (1977) references pá·qi as Mapuche formant. Direct primary Mapudungún headword entry not located in available sources."
+        }
+      ]
+    },
+    {
+      "id": "CSM-003",
+      "término": "Cahuín",
+      "origen": "Mapudungún",
+      "tipo": "préstamo léxico con desplazamiento semántico",
+      "significado_original": "Reunión ritual comunitaria; junta para beber / borrachera colectiva; reunión en círculo alrededor de un canelo. Mapuche cahuiñ = borrachera o junta para beber o emborracharse (Febrés vía Lenz).",
+      "uso_chileno": "Chisme; enredo social; drama interpersonal. 'Se armó un cahuín' / 'no metas cahuín'.",
+      "registro": "Coloquial / transversal",
+      "capa_colonial": "Degradación semántica de práctica indígena comunitaria hacia marcador de toxicidad social — huella visible de violencia lingüística colonial.",
+      "contexto_típico": "'Se armó un cahuín' / 'no metas cahuín'",
+      "traducción_EN": "Gossip / drama / stirring the pot (no exact equivalent)",
+      "NLPgap": "Alta — LLMs devuelven significado chilenismo sin historia semántica colonial",
+      "NLPgap_nivel": "high",
+      "fuente": "Lenz (1910) entrada 90; González Retamal (2018); Valencia Alba (1977); S.A.A. testimonio nativo",
+      "claims": [
+        {
+          "claim": "Origen mapudungún: cahuiñ = borrachera / junta para beber; reunión en círculo alrededor de canelo",
+          "status": "verified",
+          "method": "Primary lexicographic source",
+          "sources": "Lenz (1910) entrada 90. González Retamal (2018): cahuín o cagüín reunión acompañada de bullicio y borrachera (de cahuiñ chicha comida con borrachera)."
+        }
+      ]
+    },
+    {
+      "id": "CSM-004",
+      "término": "Ñuñoa",
+      "origen": "Mapudungún",
+      "tipo": "topónimo",
+      "significado_original": "Lugar donde hay ñuño — Sisyrinchium fusceum (huilmo); planta de la familia del iris nativa de Chile. No es diente de león como a veces se cita.",
+      "uso_chileno": "Nombre de una comuna de Santiago; significado botánico no sobrevive en el uso cotidiano.",
+      "registro": "Registro toponímico / neutro",
+      "capa_colonial": "Fosilización toponímica: geografía mapuche sobrevive como etiqueta administrativa despojada de significado ecológico.",
+      "contexto_típico": "Nombre de comuna santiaguina; dirección administrativa",
+      "traducción_EN": "Ñuñoa (untranslatable proper noun; etymological gloss: place of the ñuño plant — Sisyrinchium fusceum)",
+      "NLPgap": "Alta — LLMs identifican Ñuñoa como distrito de Santiago pero no recuperan origen botánico ni lingüístico",
+      "NLPgap_nivel": "high",
+      "fuente": "Valencia Alba (1977) p.351; S.A.A. testimonio nativo",
+      "claims": [
+        {
+          "claim": "Ñuñoa = lugar donde hay ñuño; ñuño = Sisyrinchium fusceum (huilmo) — no diente de león",
+          "status": "verified",
+          "method": "Secondary lexicographic source with botanical identification",
+          "sources": "Valencia Alba (1977) p.351: 'Ñuñoa: lugar donde hay ñuño, la Sisyrinchium fusceum, también conocida como huilmo.'"
+        }
+      ]
+    },
+    {
+      "id": "CSM-005",
+      "término": "Luche",
+      "origen": "Mapudungún / Quechua (disputado)",
+      "tipo": "término polisémico",
+      "significado_original": "Alga roja comestible Pyropia columbina; alimento costero prehispánico.",
+      "uso_chileno": "(1) Alga comestible vendida en el sur como pan de luche; (2) juego infantil similar al rayuela.",
+      "registro": "Coloquial / regional sur",
+      "capa_colonial": "Doble significado conecta cultura alimentaria indígena costera con juego infantil urbano — ambos usos desaparecen en generaciones jóvenes.",
+      "contexto_típico": "'Vamos a jugar luche' / '¿Compraste luche en la feria?'",
+      "traducción_EN": "(1) Sea lettuce / luche (approximate); (2) hopscotch",
+      "NLPgap": "Alta — LLMs desambiguan mal entre dos significados; contexto cultural de ambos escaso",
+      "NLPgap_nivel": "high",
+      "fuente": "SUBPESCA/FIPA (verificación científica Pyropia columbina); S.A.A. testimonio nativo",
+      "claims": [
+        {
+          "claim": "Nombre científico Pyropia columbina para el alga llamada luche",
+          "status": "verified",
+          "method": "Academic + corpus attestation",
+          "sources": "SUBPESCA/FIPA biological survey; QUELP.cl species catalog."
+        },
+        {
+          "claim": "Origen lingüístico de la palabra luche (Mapudungún o Quechua)",
+          "status": "disputed",
+          "method": "Lexicographic (pending)",
+          "sources": "No headword entry in Lenz (1910) available parts. Origin unconfirmed."
+        }
+      ]
+    },
+    {
+      "id": "CSM-006",
+      "término": "Cochayuyo",
+      "origen": "Quechua",
+      "tipo": "préstamo léxico",
+      "significado_original": "Cocha = agua/lago + yuyo = hierba → hierba del agua. Durvillaea antarctica.",
+      "uso_chileno": "Alga parda grande; alimento base de cocina costera y popular chilena; históricamente codificada como comida de pobres ahora revalorizada como superalimento.",
+      "registro": "Coloquial / popular",
+      "capa_colonial": "El origen quechua revela redes de intercambio andinas que moldearon el vocabulario costero chileno; arco de clase visible en un solo ingrediente.",
+      "contexto_típico": "Cocina costera y popular; guisos y cazuelas; revalorización gastronómica urbana",
+      "traducción_EN": "Bull kelp / cochayuyo (no exact English common name; Durvillaea antarctica)",
+      "NLPgap": "Alta — LLMs carecen de codificación de clase el arco de revalorización y la etimología quechua-a-costa",
+      "NLPgap_nivel": "high",
+      "fuente": "SUBPESCA/FIPA; QUELP.cl; Lenz (1910) entrada 86 confirma morfema -yuyo (quechua yuyu = hierba); S.A.A. testimonio nativo",
+      "claims": [
+        {
+          "claim": "Nombre científico Durvillaea antarctica para cochayuyo",
+          "status": "verified",
+          "method": "Academic + corpus attestation",
+          "sources": "SUBPESCA/FIPA; QUELP.cl; descripción científica original 1839 (Johannes von Suhr)."
+        },
+        {
+          "claim": "Etimología quechua: cocha (agua/lago) + yuyo (hierba/maleza)",
+          "status": "unverified",
+          "method": "Lexicographic (partial)",
+          "sources": "Lenz (1910) entrada 86 confirma morfema -yuyo en vocabulario costero chileno (vía cachiyuyo). Compuesto completo pendiente de verificación directa."
+        }
+      ]
+    },
+    {
+      "id": "CSM-007",
+      "término": "Pololo / Polola",
+      "origen": "Mapudungún",
+      "tipo": "préstamo léxico con desplazamiento semántico radical",
+      "significado_original": "Coleóptero nativo — Astylus trifasciatus e Hylamorpha elegans — que ronda flores sin posarse. Mapuche püldu / pül-lu = mosca; onomatopéyico (Febrés vía Lenz).",
+      "uso_chileno": "(1) Novio/novia — pareja romántica informal sin compromiso formal; (2) el insecto; (3) trabajo ocasional remunerado.",
+      "registro": "Coloquial / transversal / neutro",
+      "capa_colonial": "La palabra sobrevivió porque llenó vacío conceptual colonial: el español colonial solo reconocía noviazgo y matrimonio — la palabra mapuche nombró la informalidad sin la carga moral española. Hipótesis no verificada pero documentada.",
+      "contexto_típico": "'¿Tienes pololo?' / 'Llevamos seis meses pololeando' / 'Son pololos, son pololos, y se tienen que casar' (31 Minutos 2015)",
+      "traducción_EN": "Boyfriend / girlfriend (carries connotations of informality and reversibility not captured by direct English equivalents)",
+      "NLPgap": "Alta — LLMs devuelven significado superficial sin origen zoológico capa colonial morfología de género duplicada ni distinción con novio",
+      "NLPgap_nivel": "high",
+      "fuente": "Lenz (1910) entrada 1151 pp.622-623; El Mercurio 3 marzo 1903 (primera atestación impresa polola); S.A.A. testimonio nativo; González Retamal (2018); Valencia Alba (1977)",
+      "claims": [
+        {
+          "claim": "Origen mapudungún: püldu / pül-lu = mosca / insecto zumbador (onomatopéyico)",
+          "status": "verified",
+          "method": "Primary lexicographic source + secondary confirmation",
+          "sources": "Lenz (1910) entrada 1151 pp.622-623. González Retamal (2018). Valencia Alba (1977). El Mercurio 3 marzo 1903 (atestación impresa polola)."
+        },
+        {
+          "claim": "Mecanismo de transferencia semántica: comportamiento del insecto (rondar sin posarse) → cortejo humano",
+          "status": "verified",
+          "method": "Ethological + lexicographic + native speaker",
+          "sources": "Lenz (1910) documenta conexión semántica explícita. Comportamiento etológico de Astylus trifasciatus. S.A.A. confirma dimensión de informalidad."
+        },
+        {
+          "claim": "Hipótesis de vacío conceptual colonial: pololo sobrevivió porque el español colonial carecía de término neutro para pareja informal",
+          "status": "unverified",
+          "method": "Inferential — native speaker testimony + historical knowledge",
+          "sources": "S.A.A. (transmisión intergeneracional del peso social de la palabra). Conocimiento general del marco moral católico colonial en Chile. Confirmación lexicohistórica pendiente."
+        }
+      ]
+    },
+    {
+      "id": "CSM-008",
+      "término": "Guata / Wata",
+      "origen": "Mapudungún",
+      "tipo": "préstamo léxico con productividad morfológica",
+      "significado_original": "Panza; barriga; estómago de rumiantes. Mapuche huata / wata = la panza (Febrés).",
+      "uso_chileno": "Barriga o zona abdominal en uso diario; genera derivados: guatita (diminutivo afectivo) y guatón/a (persona con barriga prominente).",
+      "registro": "Coloquial / transversal",
+      "capa_colonial": "Caso paradigmático de integración profunda: raíz mapuche genera derivados productivos dentro del español chileno; mayoría de hablantes no reconoce origen indígena.",
+      "contexto_típico": "'Me duele la guata' / 'le duele la guatita' / 'ese guatón'",
+      "traducción_EN": "Belly / stomach / tummy (guatita = tummy; guatón = pot-bellied person — derivations have no single English equivalent)",
+      "NLPgap": "Media-alta — LLMs pueden identificar guata sin documentar origen mapuche ni productividad morfológica",
+      "NLPgap_nivel": "medium-high",
+      "fuente": "Lenz (1910) entrada 598 vía Valencia Alba (1977); González Retamal (2018); Buesa y Enguita (1992); S.A.A. testimonio nativo",
+      "claims": [
+        {
+          "claim": "Origen mapudungún: huata / wata = panza barriga",
+          "status": "verified",
+          "method": "Primary and secondary lexicographic sources",
+          "sources": "Lenz (1910) entrada 598 citada en Valencia Alba (1977). González Retamal (2018): mapuche Febrés huata la panza. 100% reconocimiento onomasiológico en ambas comunidades estudiadas."
+        }
+      ]
+    },
+    {
+      "id": "CSM-009",
+      "término": "Poto",
+      "origen": "Mapudungún",
+      "tipo": "préstamo léxico con amplio rango semántico",
+      "significado_original": "Trasero / sieso / culo — ocho acepciones en Lenz (1910) incluyendo referentes anatómicos proverbios y referentes naturales. Mapuche poto = el sieso (Febrés).",
+      "uso_chileno": "Nalgas / trasero; cotidiano y transversal; en infancia regulado — familias y profesoras redirigen a popó nalga o glúteo.",
+      "registro": "Coloquial / transversal (regulado en educación infantil)",
+      "capa_colonial": "Tensión entre uso real y corrección enseñada; popó usado como reemplazo para nalgas genera confusión NLP con significado de excremento en otras variedades del español.",
+      "contexto_típico": "'Sana sana potito de rana' (rima infantil atestada Lenz 1910) / 'Se cayó de poto' / 'No digas poto di glúteo' (corrección en jardín)",
+      "traducción_EN": "Butt / rear end / buttocks (no exact equivalent capturing the Chilean sociolinguistic register)",
+      "NLPgap": "Alta — LLMs pueden no detectar que popó en Chile infantil = nalgas (no excremento); ni tensión sociolingüística entre normalidad adulta y regulación pedagógica",
+      "NLPgap_nivel": "high",
+      "fuente": "Lenz (1910) entrada 1160; Valencia Alba (1977); González Retamal (2018); Buesa y Enguita (1992); S.A.A. testimonio nativo",
+      "claims": [
+        {
+          "claim": "Origen mapudungún: poto = trasero / sieso",
+          "status": "verified",
+          "method": "Primary lexicographic source",
+          "sources": "Lenz (1910) entrada 1160. Valencia Alba (1977): potazo de poto asentaderas y éste del mapuche poto trasero (Lenz 1160). González Retamal (2018) y Buesa y Enguita (1992)."
+        }
+      ]
+    },
+    {
+      "id": "CSM-010",
+      "término": "Guagua",
+      "origen": "Quechua",
+      "tipo": "préstamo léxico",
+      "significado_original": "Quechua wáwa = criatura en general.",
+      "uso_chileno": "Bebé / lactante — completamente naturalizado; polisemia interdialectal: guagua = bus en español canario y caribeño.",
+      "registro": "Coloquial / transversal / incluido en contextos médicos y sociales",
+      "capa_colonial": "Naturalización completa: sustrato indígena invisible para hablantes; genera fricción interdialectal.",
+      "contexto_típico": "'Tiene una guagua de tres meses' / 'esas bailarinas tienen sus guagüitas' (atestado Valencia Alba 1977)",
+      "traducción_EN": "Baby / infant (guagüita = little baby)",
+      "NLPgap": "Alta — LLMs pueden desambiguar incorrectamente guagua entre variedad chilena (bebé) y canaria-caribeña (bus)",
+      "NLPgap_nivel": "high",
+      "fuente": "Valencia Alba (1977): GUAGUA del quechua wáwa criatura en general; Lenz (1910) vía Valencia Alba; S.A.A. testimonio nativo",
+      "claims": [
+        {
+          "claim": "Origen quechua: wáwa = criatura en general → bebé en español chileno",
+          "status": "verified",
+          "method": "Primary and secondary lexicographic sources",
+          "sources": "Valencia Alba (1977): GUAGUA f. Del quechua wáwa 'criatura en general' (Cor. s/v.). Atestada en corpus."
+        }
+      ]
+    },
+    {
+      "id": "CSM-011",
+      "término": "Charqui",
+      "origen": "Quechua",
+      "tipo": "préstamo léxico",
+      "significado_original": "Quechua ch'arki = carne salada y secada al sol — técnica de conservación prehispánica andina (Middendorf vía González Retamal).",
+      "uso_chileno": "Carne salada y seca para conservación prolongada; hoy ruralmente codificada; sobrevive activamente en charquicán.",
+      "registro": "Conocido / ruralmente codificado",
+      "capa_colonial": "Carga asociaciones fuertes con ruralidad economía tradicional y subsistencia; imaginario del arriero y los viajes largos; marca comercial El Arriero.",
+      "contexto_típico": "'¿Tienes charqui?' / 'charquicán de vacuno'",
+      "traducción_EN": "Jerky / dried meat (functional equivalent but jerky erases Andean preservation context and rural imaginary)",
+      "NLPgap": "Media-alta — LLMs pueden traducir charqui como jerky borrando técnica andina específica imaginario rural y conexión con charquicán",
+      "NLPgap_nivel": "medium-high",
+      "fuente": "Valdivia (1684): charqui cecina (atestación colonial); González Retamal (2018): Middendorf ch'arqui; Febrés charqui; S.A.A. testimonio nativo",
+      "claims": [
+        {
+          "claim": "Origen quechua: ch'arki = carne salada y secada al sol",
+          "status": "verified",
+          "method": "Multiple primary and secondary lexicographic sources",
+          "sources": "González Retamal (2018): quechua Middendorf ch'arqui. Valdivia (1684): charqui cecina (atestación colonial). Febrés: charqui el charqui o cecina."
+        }
+      ]
+    },
+    {
+      "id": "CSM-012",
+      "término": "Chuchoca",
+      "origen": "Quechua / Mapudungún (disputado)",
+      "tipo": "préstamo léxico",
+      "significado_original": "Maíz cocido secado al sol y molido grueso para conservación. Febrés: chuchoca o cunarquen = maíz tostado o cocido para secar y guardar.",
+      "uso_chileno": "Ingrediente tradicional en papas con chuchoca y cazuelas; transmitido por mujeres mayores; distinto de harina de maíz genérica por el paso previo de cocción.",
+      "registro": "Tradicional / rural-doméstico",
+      "capa_colonial": "Archivo de saber culinario femenino intergeneracional; la palabra porta memoria de práctica doméstica pre-industrial.",
+      "contexto_típico": "'Papas con chuchoca' / 'cazuela con chuchoca' — cocina doméstica invernal",
+      "traducción_EN": "Dried toasted corn / chuchoca (no exact equivalent — cornmeal is inaccurate)",
+      "NLPgap": "Alta — LLMs pueden no distinguir chuchoca de cornmeal genérico perdiendo proceso específico e inserción en platos tradicionales",
+      "NLPgap_nivel": "high",
+      "fuente": "González Retamal (2018): Febrés chuchoca o cunarquen; S.A.A. testimonio familiar (abuela nacida ca.1920-1930)",
+      "claims": [
+        {
+          "claim": "Origen Mapuche (vía Febrés) o Quechua/Aimara (Lenz señala ambas posibilidades explícitamente)",
+          "status": "disputed",
+          "method": "Multiple primary lexicographic sources with divergent attributions",
+          "sources": "González Retamal (2018): Febrés chuchoca o cunarquen maíz tostado o cocido para secar y guardar. Lenz (1910) nota posible doble origen."
+        }
+      ]
+    },
+    {
+      "id": "CSM-013",
+      "término": "Mote",
+      "origen": "Quechua / Mapudungún",
+      "tipo": "término polisémico",
+      "significado_original": "Maíz o trigo cocido en lejía hasta que suelta el hollejo luego lavado. Mapuche muthi o muti = el mote de maíz o trigo cocido (Febrés vía González Retamal).",
+      "uso_chileno": "(1) Mote maíz: snack callejero histórico casi desaparecido. (2) Mote con huesillos: trigo mote en bebida refrescante nacional — identidad cultural activa.",
+      "registro": "Transversal / con diferenciación de contexto",
+      "capa_colonial": "Mote maíz = memoria de economía popular urbana y figura del vendedor ambulante casi desaparecida; mote con huesillos = repertorio de identidad nacional persistente.",
+      "contexto_típico": "'¿Tienes mote?' (requiere aclaración: ¿cuál mote?) / 'Un mote con huesillos'",
+      "traducción_EN": "Hominy / processed grain (context-dependent — no single equivalent captures both uses)",
+      "NLPgap": "Alta — LLMs pueden tratar mote como referente único sin distinguir mote de maíz vs. trigo según contexto",
+      "NLPgap_nivel": "high",
+      "fuente": "González Retamal (2018): mapuche Febrés muthi o muti el mote de maíz o trigo cocido; Valencia Alba (1977); S.A.A. testimonio nativo",
+      "claims": [
+        {
+          "claim": "Origen mapuche: Febrés muthi o muti = el mote de maíz o trigo cocido",
+          "status": "verified",
+          "method": "Primary lexicographic sources",
+          "sources": "González Retamal (2018): mapuche Febrés muthi o muti. 9-10/10 reconocimiento en ambas comunidades estudiadas."
+        }
+      ]
+    },
+    {
+      "id": "CSM-014",
+      "término": "Ñachi",
+      "origen": "Quechua probable (vía Mapuche)",
+      "tipo": "préstamo léxico",
+      "significado_original": "Sangre fresca de animal recién sacrificado especialmente cordero aliñada con sal y ají antes de coagular. Probable quechua = entrañas intestinos (González Retamal).",
+      "uso_chileno": "Preparación tradicional del sur de Chile; no es transversal — localizada cultural y geográficamente; activa frontera cultural entre familiaridad rural y distancia urbana.",
+      "registro": "Restringido / sur de Chile / rural-sureño",
+      "capa_colonial": "La palabra traza frontera cultural interna: sur rural vs. Santiago urbano; proximidad al faenamiento animal vs. distancia de él.",
+      "contexto_típico": "'¿Vas a hacer ñachi?' — preguntado en el momento del faenamiento antes que la sangre enfríe",
+      "traducción_EN": "Blood dish / fresh blood preparation (no English equivalent — blood sausage is incorrect)",
+      "NLPgap": "Alta — LLMs pueden fallar en ubicar ñachi geográficamente y en capturar la frontera afectiva que activa",
+      "NLPgap_nivel": "high",
+      "fuente": "González Retamal (2018): probable quechua = entrañas intestinos; S.A.A. testimonio nativo",
+      "claims": [
+        {
+          "claim": "Probable origen quechua (entrañas intestinos) adoptado por Mapuche como término culinario",
+          "status": "unverified",
+          "method": "Secondary lexicographic source (González Retamal citando Lenz)",
+          "sources": "González Retamal (2018): probablemente del quechua entrañas intestinos. La palabra había sido aceptada por los mapuches como término de cocina. Reconocimiento generacional documentado: mejor conocida por grupo 50-80."
+        }
+      ]
+    },
+    {
+      "id": "CSM-015",
+      "término": "Ruca",
+      "origen": "Mapudungún",
+      "tipo": "préstamo léxico con bifurcación semántica",
+      "significado_original": "Vivienda mapuche tradicional: estructura circular u oval con fogón central y abertura superior para el humo. Mapuche ruka (Lenz: choza de indio).",
+      "uso_chileno": "(1) La vivienda mapuche específica — aún reconocida. (2) Uso coloquial urbano despectivo en declive: casa o pieza desordenada / precaria.",
+      "registro": "(1) Arquitectónico/cultural; (2) coloquial despectivo en declive",
+      "capa_colonial": "El uso urbano despectivo desplaza la vivienda mapuche específica hacia marcador genérico de inferioridad — jerarquía colonial codificada en la metáfora. Uso en familia de S.A.A. por madre con probable ascendencia mapuche = reproducción interna de estigma heredado.",
+      "contexto_típico": "'Esta pieza está hecha una ruca' (uso despectivo en declive) vs. 'la ruca mapuche tiene fogón interior' (uso cultural/educativo)",
+      "traducción_EN": "(1) Mapuche dwelling / ruca; (2) pigsty / mess (declining use)",
+      "NLPgap": "Alta — LLMs pueden no distinguir los dos usos ni reconocer la devaluación colonial en el desplazamiento metafórico",
+      "NLPgap_nivel": "high",
+      "fuente": "Lenz (1910): ruca = choza de indio; Manquilef (1911): ruka documentada en texto mapuche y en glosario p.59-60 Ruca. Choza de indio; S.A.A. testimonio nativo (madre)",
+      "claims": [
+        {
+          "claim": "Origen mapudungún: ruka = vivienda mapuche tradicional",
+          "status": "verified",
+          "method": "Multiple primary sources",
+          "sources": "Lenz (1910): ruca = choza de indio. Manquilef (1911) documenta extensamente ruka y ceremonia rukan (Capítulo II). Manquilef glosario p.59-60: Ruca. Choza de indio."
+        }
+      ]
+    },
+    {
+      "id": "CSM-016",
+      "término": "Huincha / Wincha",
+      "origen": "Quechua",
+      "tipo": "préstamo léxico",
+      "significado_original": "Quechua wínca = cinta que traen los indígenas en la cabeza para sujetar los cabellos (Valencia Alba vía Corominas).",
+      "uso_chileno": "Principalmente la cinta métrica; extendida a cintas correas y cualquier tira alargada; pronunciación de ch activa distinciones sociolingüísticas de clase.",
+      "registro": "Conocido / transversal",
+      "capa_colonial": "La pronunciación del fonema ch en huincha es micro-arena sociolingüística: ch más aspirada asociada a clase alta vs. pronunciación integrada al habla chilena común.",
+      "contexto_típico": "'Pásame la huincha de medir' / 'el camión cortó la huincha del esquí' (Valencia Alba 1977)",
+      "traducción_EN": "Tape measure / ribbon / strap / band (the phonetic class layer has no English equivalent)",
+      "NLPgap": "Media-alta — LLMs pueden identificar huincha sin documentar rango semántico más amplio ni dimensión fonética como marcador de clase",
+      "NLPgap_nivel": "medium-high",
+      "fuente": "Valencia Alba (1977): HUINCHA del quechua wínca cinta; Manquilef (1911) glosario p.59: Huincha. Cinta de lana; S.A.A. testimonio nativo",
+      "claims": [
+        {
+          "claim": "Origen quechua: wínca = cinta de cabeza indígena → generalizada a cualquier banda alargada",
+          "status": "verified",
+          "method": "Multiple primary and secondary sources",
+          "sources": "Valencia Alba (1977): HUINCHA del quechua wínca. Manquilef (1911) glosario p.59: Huincha. Cinta de lana. (absorbida al español chileno para 1911)."
+        }
+      ]
+    },
+    {
+      "id": "CSM-017",
+      "término": "Chuico",
+      "origen": "Mapudungún",
+      "tipo": "préstamo léxico",
+      "significado_original": "Mapuche chuyco = tinajita de greda (pequeña tinaja de arcilla) (Febrés vía González Retamal).",
+      "uso_chileno": "Recipiente grande de cuello estrecho y cuerpo ancho para almacenar macerar o fermentar líquidos especialmente alcohólicos artesanales; material pasó de barro a vidrio pero palabra persiste.",
+      "registro": "Conocido / rural-popular / no transversal urbano contemporáneo",
+      "capa_colonial": "Asociación con mundo campesino fiesta popular y consumo de alcohol artesanal; en Santiago sobrevive más como imagen cultural que como objeto presente.",
+      "contexto_típico": "'Un chuico de vino' / 'cebollas en escabeche en el chuico'",
+      "traducción_EN": "Demijohn / clay jug / carboy (no exact equivalent)",
+      "NLPgap": "Media — LLMs pueden reducir chuico a bottle perdiendo historia material rural-popular y vitality uneven",
+      "NLPgap_nivel": "medium",
+      "fuente": "González Retamal (2018): mapuche Febrés chuyco tinajita; Buesa y Enguita (1992): vasija de vidrio cilíndrica (de chuyco vasija); S.A.A. testimonio nativo",
+      "claims": [
+        {
+          "claim": "Origen mapuche: chuyco = tinajita de greda",
+          "status": "verified",
+          "method": "Primary lexicographic source via secondary compilation",
+          "sources": "González Retamal (2018): mapuche Febrés chuyco tinajita. 100% reconocimiento semasiológico en ambas comunidades; muy bajo reconocimiento onomasiológico (1/10)."
+        }
+      ]
+    },
+    {
+      "id": "CSM-018",
+      "término": "Pilco",
+      "origen": "Mapudungún",
+      "tipo": "préstamo léxico",
+      "significado_original": "Mapuche Febrés pidcu = mote de frejoles cocidos con maíz (vía González Retamal).",
+      "uso_chileno": "Variante de porotos granados donde el maíz va picado en trozos (no molido) — distinción con porotos con mazamorra donde el maíz va triturado y espesa más el caldo.",
+      "registro": "Doméstico / culinario / conocido",
+      "capa_colonial": "Vocabulario de saber culinario heredado: nombra no solo textura o técnica sino manera de reconocer autenticidad y continuidad de cocina popular doméstica.",
+      "contexto_típico": "'Porotos con pilco' / 'Los porotitos con pilco los preparo para el verano todos los días' (atestado González Retamal 2018)",
+      "traducción_EN": "Bean and corn stew (approximate — stew erases the specific corn preparation that defines the dish)",
+      "NLPgap": "Alta — LLMs pueden traducir pilco como vegetable stew genérico perdiendo distinción clave: maíz picado vs. molido",
+      "NLPgap_nivel": "high",
+      "fuente": "González Retamal (2018): mapuche Febrés pidcu; S.A.A. testimonio nativo",
+      "claims": [
+        {
+          "claim": "Origen mapuche: Febrés pidcu = mote de frejoles cocidos con maíz",
+          "status": "verified",
+          "method": "Primary lexicographic source via secondary compilation",
+          "sources": "González Retamal (2018): mapuche Febrés pidcu un mote de frejoles cocidos con maíz. Buesa y Enguita (1992) confirman. 7-10/10 reconocimiento en ambas comunidades."
+        }
+      ]
+    },
+    {
+      "id": "CSM-019",
+      "término": "Choclo",
+      "origen": "Quechua",
+      "tipo": "préstamo léxico",
+      "significado_original": "Maíz fresco para consumo humano — origen quechua; parte de distribución andina y costera del Pacífico (Ecuador Perú Chile).",
+      "uso_chileno": "Término dominante y estándar chileno para el maíz fresco — no es variante coloquial de maíz ES el término primario; maíz suena extraño o técnico en el habla diaria.",
+      "registro": "Estándar / transversal / todos los contextos",
+      "capa_colonial": "Pronunciación del fonema ch es micro-arena de performance sociolingüística de clase — no en el término sino en cómo se pronuncia.",
+      "contexto_típico": "'¿Compraste choclo?' / 'choclo asado' / 'humitas de choclo'",
+      "traducción_EN": "Corn / ear of corn (maíz is not a neutral synonym in Chilean Spanish)",
+      "NLPgap": "Media-alta — LLMs pueden tratar choclo como sinónimo de maíz perdiendo jerarquía de uso distribución andina y capa sociolingüística de la ch",
+      "NLPgap_nivel": "medium-high",
+      "fuente": "Valencia Alba (1977) documenta choclo en español culto oral chileno; S.A.A. testimonio nativo y experiencia migrante (distribución ecuatoriana confirmada en Florida)",
+      "claims": [
+        {
+          "claim": "Origen quechua — maíz fresco para consumo humano",
+          "status": "verified",
+          "method": "Secondary lexicographic sources; distribución panandina confirma sustrato quechua",
+          "sources": "Valencia Alba (1977) atestigua en corpus. González Retamal (2018) usa choclo como término estándar a lo largo. Distribución geográfica Ecuador-Perú-Chile confirma sustrato quechua histórico."
+        }
+      ]
+    },
+    {
+      "id": "CSM-020",
+      "término": "Pichintún",
+      "origen": "Mapudungún + morfología española (híbrido)",
+      "tipo": "formación híbrida",
+      "significado_original": "Mapuche pichi = poco cosa poca i pequeña chiquita (Febrés). Lenz (1910) entrada 1067: un pichintún = un poco un poquito una pisca [Centro].",
+      "uso_chileno": "Cantidad mínima muy pequeña — un poquito; para pedir dar agregar medir o describir remanentes. S.A.A. usa activamente; considera plenamente vigente.",
+      "registro": "Coloquial / ampliamente aceptado / no sentido como extraño",
+      "capa_colonial": "La raíz mapuche pichi está tan absorbida que la forma circula como coloquial chileno ordinario sin percepción de sustrato indígena — invisibilidad del origen con uso activo.",
+      "contexto_típico": "'Ponle un pichintún de sal' / 'me queda un pichintún'",
+      "traducción_EN": "A tiny bit / just a little (the hybrid morphology and invisible Mapuche substrate have no English equivalent)",
+      "NLPgap": "Alta — LLMs pueden reconocer significado básico sin documentar raíz mapuche morfología híbrida ni invisibilidad del sustrato para hablantes",
+      "NLPgap_nivel": "high",
+      "fuente": "Lenz (1910) entrada 1067; Mapuche pichi = poco pequeño (Febrés); S.A.A. testimonio nativo (uso activo actual)",
+      "claims": [
+        {
+          "claim": "Formación híbrida: Mapuche pichi (pequeño poco) + sufijo integrado al español; atestada por Lenz (1910) como coloquial chileno",
+          "status": "verified",
+          "method": "Primary lexicographic source",
+          "sources": "Lenz (1910) entrada 1067: un pichintún [Centro] = un poco un poquito una pisca. Febrés vía Lenz: pichi = poco cosa poca i pequeña chiquita. Lenz documenta familia completa de formas derivadas de pichi-."
+        }
+      ]
+    },
+    {
+      "id": "CSM-021",
+      "término": "Poroto",
+      "origen": "Quechua",
+      "tipo": "préstamo léxico",
+      "significado_original": "Quechua purutu = frejol (Lenz 1158). Cultivar prehispánico presente en Chile y Perú antes de llegada española.",
+      "uso_chileno": "(1) Legumbre — término primario y estándar; aparece en habla cotidiana etiquetas de supermercado y nombres de variedades. (2) Protuberancia pequeña y dura bajo la piel (metáfora morfológica). (3) Niño pequeño (raro).",
+      "registro": "Estándar / transversal / institucional",
+      "capa_colonial": "Lenz nota que el nombre quechua llegó con los conquistadores y desplazó el término mapuche para la planta — colonización léxica dentro del sustrato indígena mismo.",
+      "contexto_típico": "'Los economistas dicen que los porotos de exportación no los consume el pueblo chileno' (atestado Valencia Alba 1977) / 'tengo un poroto en el brazo'",
+      "traducción_EN": "Bean (poroto negro = black bean; poroto granado = fresh shelled bean; figurative: small hard lump)",
+      "NLPgap": "Media-alta — LLMs pueden no documentar que en Chile poroto es término primario estándar (no alternativa coloquial a frijol) ni las extensiones figuradas locales",
+      "NLPgap_nivel": "medium-high",
+      "fuente": "Lenz (1910) entrada 1158: del quechua purutu frejol; Valencia Alba (1977): POROTO 1 del quechua purutu; POROTO 2 niño de corta edad; S.A.A. testimonio nativo",
+      "claims": [
+        {
+          "claim": "Origen quechua: purutu = frejol/bean",
+          "status": "verified",
+          "method": "Multiple primary and secondary lexicographic sources",
+          "sources": "Lenz (1910) entrada 1158. Lenz documenta que el nombre quechua fue traído desde Perú por Valdivia y desplazó el término mapuche. Valencia Alba (1977): POROTO 1 del quechua purutu (Lenz 1158); POROTO 2 niño de corta edad."
+        }
+      ]
+    },
+    {
+      "id": "CSM-022",
+      "término": "Palta",
+      "origen": "Aimara (vía Quechua)",
+      "tipo": "préstamo léxico",
+      "significado_original": "Aimara phalta (Bertonio 1612) = fruta desta tierra que se da en los Yungas. Vía quechua paltay (Middendorf: árbol de los valles de la costa). Lenz (1910) entrada 999.",
+      "uso_chileno": "La única palabra real para el aguacate en uso cotidiano chileno — aguacate suena inmediatamente extraño; hablantes chilenos frecuentemente perciben palta y aguacate como frutas distintas.",
+      "registro": "Estándar / transversal / todos los contextos",
+      "capa_colonial": "Naturalización completa: origen aimara invisible para hablantes; contrasta con aguacate de origen náhuatl en México — misma fruta nombrada por dos familias lingüísticas indígenas distintas en dos regiones de América Latina.",
+      "contexto_típico": "'¿Compraste palta?' / 'pan con palta' / 'ensalada de palta' — aguacate produciría desorientación social inmediata en hablante chileno",
+      "traducción_EN": "Avocado (the Aymara etymology and the sensory-identity layer attached to palta have no parallel in English)",
+      "NLPgap": "Alta — LLMs pueden tratar palta y aguacate como sinónimos neutros perdiendo jerarquía en español chileno dimensión de identidad afectivo-sensorial y distinción de familia lingüística indígena",
+      "NLPgap_nivel": "high",
+      "fuente": "Lenz (1910) entrada 999: etimología aimara citando Bertonio II 255 (1612): phalta; Middendorf quechua: paltay árbol de los valles; S.A.A. testimonio nativo",
+      "claims": [
+        {
+          "claim": "Origen aimara vía quechua: Aimara phalta (Bertonio 1612) → Quechua paltay → español chileno palta",
+          "status": "verified",
+          "method": "Primary lexicographic source (Lenz 1910) citando diccionario aimara colonial (Bertonio 1612)",
+          "sources": "Lenz (1910) entrada 999: etimología aimara citando Bertonio II 255 (1612): phalta fruta desta tierra que se da en los Yungas. Middendorf quechua: paltay árbol de los valles de la costa. Lenz documenta que en Centroamérica prevalece el náhuatl aguacate; en Chile y Perú el aimara/quechua palta."
+        }
+      ]
+    },
+    {
+      "id": "CSM-023",
+      "término": "Merkén",
+      "origen": "Mapudungún (variedad Pehuenche)",
+      "tipo": "préstamo léxico",
+      "significado_original": "Preparación pehuenche de ají ahumado y seco molido con sal y a veces cilantro tostado — técnica de ahumado y secado produce perfil de sabor específico.",
+      "uso_chileno": "Especia de consumo masivo transversal y reconocida a nivel nacional; entró al vocabulario de S.A.A. en la adolescencia — no era especialmente presente en la ciudad en la infancia; retiene explícitamente identidad mapuche/pehuenche.",
+      "registro": "Masivo / transversal / con identidad indígena explícita retenida",
+      "capa_colonial": "Inusualmente retiene vínculo explícito con origen pehuenche — contrasta con mayoría de entradas donde sustrato indígena es invisible; popularización urbana relativamente reciente.",
+      "contexto_típico": "'Le puse merkén' / 'queso con merkén' / 'humita con merkén'",
+      "traducción_EN": "Chilean smoked chili spice / merkén (no English equivalent — smoked chili powder loses Pehuenche specificity)",
+      "NLPgap": "Alta — LLMs pueden identificar merkén como ají chileno sin origen pehuenche específico técnica de ahumado ni arco histórico de popularización",
+      "NLPgap_nivel": "high",
+      "fuente": "González Retamal (2018): confirma origen pehuenche; S.A.A. testimonio nativo",
+      "claims": [
+        {
+          "claim": "Origen mapudungún (variedad Pehuenche) — preparación de ají ahumado tradicional",
+          "status": "verified",
+          "method": "Secondary lexicographic source; atribución cultural pehuenche confirmada",
+          "sources": "González Retamal (2018) confirma origen pehuenche. Verificación contra Lenz (1910) pendiente — entrada no localizada en partes disponibles."
+        }
+      ]
+    },
+    {
+      "id": "CSM-024",
+      "término": "Malón",
+      "origen": "Mapudungún",
+      "tipo": "préstamo léxico con desplazamiento semántico generacional documentado",
+      "significado_original": "Raid armado sorpresivo; expedición dañosa; ataque repentino de los indios (Buesa y Enguita 1992 vía González Retamal).",
+      "uso_chileno": "Generación ~1950s: fiesta sorpresa / reunión social autónoma con baile comida y alcohol. Generación S.A.A.: siendo reemplazada por carrete. Hoy: obsolescente — reemplazada por previa / carrete.",
+      "registro": "Datado generacional — natural para hablantes nacidos ~1950s o antes",
+      "capa_colonial": "Inversión semántica colonial paradigmática: término de resistencia militar mapuche redeployado como nombre de socialidad festiva en cultura dominante; el elemento sorpresa se retiene pero la amenaza se transforma en celebración.",
+      "contexto_típico": "'Le hicimos un malón' — marcador generacional: natural solo para hablantes nacidos ~1950s o antes; hablantes más jóvenes dirían 'le hicimos una previa' o 'salimos de carrete'",
+      "traducción_EN": "(Military) Raid / surprise attack; (festive) surprise party / gathering (neither translation captures the generational dating or the colonial semantic inversion)",
+      "NLPgap": "Alta — LLMs pueden devolver significado festivo sin origen militar colonial inversión semántica generacional ni diferencia estructural con reemplazos modernos (carrete/previa)",
+      "NLPgap_nivel": "high",
+      "fuente": "González Retamal (2018) y Buesa y Enguita (1992): malón expedición dañosa / fiesta para bailar; S.A.A. testimonio nativo e intergeneracional",
+      "claims": [
+        {
+          "claim": "Origen mapuche: maloca / malón = raid armado sorpresivo; desplazamiento semántico a reunión festiva en español chileno",
+          "status": "verified",
+          "method": "Multiple secondary lexicographic sources; documented in Buesa y Enguita (1992) and González Retamal (2018)",
+          "sources": "González Retamal (2018) y Buesa y Enguita (1992): malón y el anticuado maloca expedición dañosa un ataque repentino de los indios; sentido chileno actual: fiesta destinada fundamentalmente a bailar o asalto sorpresivo de un grupo de amigos. Verificación contra Lenz (1910) pendiente."
+        }
+      ]
+    }
+  ]
+}
