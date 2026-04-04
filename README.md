@@ -1,7 +1,7 @@
 # Chilean Spanish Micro-Archive
 ### *A bilingual annotated lexicon of Chilean Spanish terms with indigenous substrate*
 
-**Status:** Prototype · 24 entries · active development  
+**Status:** Prototype · 50 entries · active development  
 **Maintainer:** Sandra D. Acevedo Alvarado · [acevedology.com](https://acevedology.com)  
 **License:** CC BY-NC-SA 4.0
 
@@ -44,7 +44,7 @@ This archive is part of a larger research project on culturally situated NLP eva
 | Entry types | Lexical borrowings, semantic shifts, toponyms, polysemous terms, hybrid formations |
 | Annotation | Bilingual (EN/ES), register, social coding, NLPgap relevance |
 | Verification | Claims-based (verified / unverified / disputed) |
-| Current entries | 24 (prototype) |
+| Current entries | 50 (prototype) |
 | Target entries | 100+ |
 | Primary source | Native speaker corpus (S.A.A.) |
 
@@ -60,7 +60,7 @@ chilean-spanish-micro-archive/
 ├── METHODOLOGY.md             ← editorial decisions, verification protocol
 │
 ├── data/
-│   ├── chilean-spanish-micro-archive.csv    ← flat tabular format (24 entries)
+│   ├── chilean-spanish-micro-archive.csv    ← flat tabular format (50 entries)
 │   └── chilean-spanish-micro-archive.json   ← structured format with claims layer
 │
 └── sources/
@@ -124,33 +124,58 @@ Full field definitions: see [SCHEMA.md](SCHEMA.md)
 
 | # | Term | Origin | Entry type | Etymology status |
 |---|------|--------|------------|-----------------|
-| 1 | Piñén | Mapudungún | Lexical borrowing | verified |
-| 2 | Puma | Mapudungún | Lexical borrowing (global) | unverified |
-| 3 | Cahuín | Mapudungún | Borrowing + semantic shift | verified |
-| 4 | Ñuñoa | Mapudungún | Toponym | verified |
-| 5 | Luche | Mapudungún / Quechua (disputed) | Polysemous term | disputed |
-| 6 | Cochayuyo | Quechua | Borrowing via coastal culture | partially verified |
-| 7 | Pololo / Polola | Mapudungún | Radical semantic shift | verified |
-| 8 | Guata / Wata | Mapudungún | Borrowing with morphological productivity | verified |
-| 9 | Poto | Mapudungún | Borrowing with wide semantic range | verified |
-| 10 | Guagua | Quechua | Lexical borrowing | verified |
-| 11 | Charqui | Quechua | Lexical borrowing | verified |
-| 12 | Chuchoca | Quechua / Mapudungún (disputed) | Lexical borrowing | disputed |
-| 13 | Mote | Quechua / Mapudungún | Polysemous term | verified |
-| 14 | Ñachi | Quechua probable (via Mapuche) | Lexical borrowing | unverified |
-| 15 | Ruca | Mapudungún | Borrowing with semantic bifurcation | verified |
-| 16 | Huincha / Wincha | Quechua | Lexical borrowing | verified |
-| 17 | Chuico | Mapudungún | Lexical borrowing | verified |
-| 18 | Pilco | Mapudungún | Lexical borrowing | verified |
-| 19 | Choclo | Quechua | Lexical borrowing | verified |
-| 20 | Pichintún | Mapudungún + Spanish morphology | Hybrid formation | verified |
-| 21 | Poroto | Quechua | Lexical borrowing | verified |
-| 22 | Palta | Aymara (via Quechua) | Lexical borrowing | verified |
-| 23 | Merkén | Mapudungún (Pehuenche) | Lexical borrowing | verified |
-| 24 | Malón | Mapudungún | Generational semantic shift | verified |
+| 1 | Cahuín | Mapudungún → Chilean Spanish | Préstamo léxico con desplazamiento semántico en el español chileno | verified |
+| 2 | Callampa | Quechua → Chilean Spanish | Préstamo del quechua con tres capas semánticamente distintas en el español chileno: botánica, sociourbanа y vulgar/popular | verified |
+| 3 | Charqui | Quechua → Chilean and Andean Spanish | Préstamo léxico del quechua | verified |
+| 4 | Charquicán | Mapudungún (compound of Quechua charqui ) → Chilean Spanish | Préstamo compuesto culinario: una palabra quechua para carne seca fue integrada al mapudungún como verbo culinario, luego pasó al español chileno como nombre de un guiso específico | verified |
+| 5 | Chaucha | Quechua → Chilean Spanish | Préstamo monetario con estrechez semántica | verified |
+| 6 | Chicha | Origin disputed (Antillean / pan-American) → Chilean Spanish | Bebida fermentada con etimología panamericana disputada | disputed |
+| 7 | Choclo | Quechua → Chilean and Andean Spanish | Préstamo léxico del quechua | verified |
+| 8 | Chonchón | Mapudungún → Chilean Spanish (polysemous) | Préstamo altamente polisémico con al menos cinco sentidos distintos en el español chileno | unverified |
+| 9 | Choro | Quechua + multiple possible sources → Chilean Spanish | Término polisémico con sentido primario zoológico (molusco) y múltiples extensiones sociales | unverified |
+| 10 | Chuchoca | Quechua / Mapudungún (disputed) → Chilean Spanish | Préstamo léxico que nombra una técnica prehispánica de conservación del maíz; sobrevive en la cocina tradicional rural transmitida a través de la memoria intergeneracional femenina | disputed |
+| 11 | Chuico | Mapudungún → Chilean Spanish | Préstamo léxico que nombra un recipiente tradicional; el material pasó del barro al vidrio pero la palabra persiste | verified |
+| 12 | Chuncho | Mapudungún → Chilean Spanish | Préstamo zoológico que ha adquirido una rica vida secundaria como marcador cultural e identitario | verified |
+| 13 | Cochayuyo | Quechua → Chilean Spanish via coastal culture | Préstamo léxico del quechua al español chileno vía cultura costera mapuche | unverified |
+| 14 | Colihue / Coligüe | Mapudungún → Chilean Spanish | Préstamo botánico | verified |
+| 15 | Copucha | Mapudungún (+ Quechua/Aymara contamination) → Chilean Spanish | Desplazamiento semántico de lo material a lo social | verified |
+| 16 | Cototo | Mapudungún + Quechua contamination → Chilean Spanish | Préstamo con productividad morfológica | unverified |
+| 17 | Curiche | Mapudungún → Chilean Spanish | Préstamo racializante: un compuesto mapuche para "persona negra" ( curi = negro + che = gente) fue absorbido al español chileno como término para una persona de piel oscura, funcionando principalmente como intensificador racial con codificación de clase | verified |
+| 18 | Guagua | Quechua → Chilean Spanish (also Canarian Spanish, with different meaning) | Préstamo léxico del quechua | verified |
+| 19 | Guarén | Mapudungún (probable) → Chilean Spanish | Préstamo zoológico que ocupa una posición específica en la taxonomía popular chilena de roedores | unverified |
+| 20 | Guata / Wata | Mapudungún → Chilean Spanish | Préstamo léxico con productividad morfológica | verified |
+| 21 | Huacho / Guacho | Quechua wakcha → Chilean and Andean Spanish | Préstamo altamente polisémico del quechua con extensa productividad morfológica | verified |
+| 22 | Huincha / Wincha | Quechua → Chilean Spanish | Préstamo léxico del quechua | verified |
+| 23 | Humita | Quechua → Chilean and Andean Spanish | Préstamo culinario que nombra una preparación de maíz de origen prehispánico | verified |
+| 24 | Laucha | Mapudungún → Chilean Spanish | Préstamo zoológico | verified |
+| 25 | Luche | Mapudungún / Quechua (disputed) → Chilean Spanish | Término polisémico | disputed |
+| 26 | Malón | Mapudungún → Chilean Spanish | Préstamo léxico con desplazamiento semántico generacional documentado | verified |
+| 27 | Maqui | Mapudungún → Chilean Spanish | Préstamo botánico-culinario | verified |
+| 28 | Merkén | Mapudungún (Pehuenche) → Chilean Spanish | Préstamo léxico que nombra una preparación de especia pehuenche | verified |
+| 29 | Mote | Quechua / Mapudungún → Chilean Spanish | Término polisémico: (1) grano de maíz procesado | verified |
+| 30 | Nanay | Quechua → Chilean Spanish | Préstamo afectivo: una palabra quechua para dolor o herida ha sido absorbida al español chileno exclusivamente como palabra-gesto de consuelo | verified |
+| 31 | Ñachi | Quechua (probable) → Mapuche → Chilean Spanish | Préstamo léxico que nombra una preparación mapuche tradicional; localizada cultural y geográficamente dentro de Chile | unverified |
+| 32 | Ñecla | Origin uncertain (possible Mapudungún) → Chilean Spanish | Préstamo zoológico / lúdico: el nombre del tipo más pequeño y sencillo de volantín en la taxonomía popular chilena | unverified |
+| 33 | Ñuñoa | Mapudungún → Santiago toponym | Topónimo | verified |
+| 34 | Paico | Quechua → Chilean Spanish | Préstamo botánico-medicinal | verified |
+| 35 | Palta | Aymara → Quechua → Chilean Spanish | Préstamo léxico del aimara vía quechua | verified |
+| 36 | Pantruca | Mapudungún (probable) → Chilean Spanish | Préstamo culinario que nombra una preparación tradicional de masa cocida en caldo; conservado en uso activo en todas las generaciones a través de transmisión doméstica intergeneracional, principalmente por líneas familiares femeninas | partially verified |
+| 37 | Paya / Palla | Quechua pallay → Chilean and Andean Spanish | Préstamo poético-performativo: una palabra quechua para la competencia de verso improvisado es hoy el término primario para la tradición distintiva de poesía oral de Chile | verified |
+| 38 | Pichintún | Mapudungún + Spanish morphology (hybrid) | Híbrido morfológico: raíz mapuche pichi (pequeño, poco) + formación con sufijo integrado al español | verified |
+| 39 | Pilco | Mapudungún → Chilean Spanish | Préstamo léxico que nombra una variante específica de un plato tradicional | verified |
+| 40 | Piñén | Mapudungún → Chilean Spanish | Préstamo léxico incorporado al español chileno | verified |
+| 41 | Pirigüín | Mapudungún → Chilean Spanish | Préstamo zoológico que se ha extendido desde su referente literal (renacuajo) para cubrir cualquier ser percibido como embrionario, pequeño o en estado de desarrollo temprano | verified |
+| 42 | Piure | Mapudungún → Chilean Spanish | Préstamo zoológico marino | verified |
+| 43 | Pololo / Polola | Mapudungún → Chilean Spanish | Préstamo léxico con desplazamiento semántico radical | verified |
+| 44 | Poncho | Origin disputed (possibly Mapudungún or Quechua) → Chilean Spanish | Préstamo de vestimenta con rica extensión fraseológica | disputed |
+| 45 | Poroto | Quechua → Chilean Spanish | Préstamo léxico | verified |
+| 46 | Poto | Mapudungún → Chilean Spanish (origin disputed: also Quechua) | Préstamo léxico con amplio rango semántico y regulación sociolingüística en contextos de infancia | verified |
+| 47 | Puma | Mapudungún → global | Préstamo léxico | unverified |
+| 48 | Raulí | Mapudungún → Chilean Spanish | Préstamo botánico | verified |
+| 49 | Ruca | Mapudungún → Chilean Spanish | Préstamo léxico con bifurcación semántica: (1) vivienda mapuche específica; (2) uso coloquial urbano como descriptor despectivo de espacio desordenado o precario | verified |
+| 50 | Trutruca | Mapudungún (onomatopoeic) → Chilean Spanish | Nombre de instrumento onomatopéyico: la palabra mapuche para un gran instrumento de viento hecho de colihue partido, tripa mojada y un cuerno de buey como campana es tanto una descripción del instrumento como una representación fonética del sonido que produce | verified |
 
 ---
-
 ## Verification methodology
 
 Etymological claims are evaluated against three source types:
