@@ -47,4 +47,4 @@ Verification status per source. Updated as consultation progresses.
 
 | Source | Status | Notes |
 |--------|--------|-------|
-| S.A.A. corpus (Sandra D. Acevedo Alvarado) | **Active** | Primary source for all entries in prototype. Native speaker of Chilean Spanish with ~10 years professional experience in language evaluation. Memory, family use, and professional observation documented per entry. |
+| S.A.A. corpus (Sandra D. Acevedo Alvarado) | **Active** | Primary source for all entries in prototype. Native speaker of Chilean Spanish. Memory, family use, and professional observation documented per entry. |
