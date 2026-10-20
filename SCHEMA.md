@@ -33,7 +33,7 @@ The file is an object with two keys: `meta` and `entries`.
 | `version` | string | Data version (`0.4`) |
 | `entry_count` | number | Number of entries (`50`) |
 | `last_updated` | string | Date of the last data update (`YYYY-MM-DD`) |
-| `license` | string | License of the archive (see [`LICENSE`](LICENSE)) |
+| `license` | string | License of the archive (see [`LICENSE`](LICENSE) and its scope in [`LICENSE-SCOPE.md`](LICENSE-SCOPE.md)) |
 | `curator` | string | Curator of the archive |
 | `curator_positionality` | string | The curator's position, stated as a methodological datum |
 | `methodology` | string | Summary of the curatorial method |

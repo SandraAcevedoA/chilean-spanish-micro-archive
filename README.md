@@ -45,7 +45,8 @@ The archive is part of a broader research project on culturally situated NLP for
 | [`Data/50chilean-spanish-micro-archive.csv`](Data/50chilean-spanish-micro-archive.csv) | Flat table: 50 rows, one per term |
 | [`SCHEMA.md`](SCHEMA.md) | Field definitions and controlled vocabularies |
 | [`SOURCES.md`](SOURCES.md) | Consultation status of each source |
-| [`LICENSE`](LICENSE) | CC BY-SA 4.0, with the scope of what it covers |
+| [`LICENSE`](LICENSE) | CC BY-SA 4.0 legal code |
+| [`LICENSE-SCOPE.md`](LICENSE-SCOPE.md) | What the license covers, and what keeps its own status |
 
 ### Scope
 
@@ -110,7 +111,7 @@ https://gitlab.com/acevedos/chilean-spanish-micro-archive
 
 ### License and contact
 
-Sandra Acevedo's original work here (the curation, the annotations, the verification-as-claims layer, the native speaker testimony, the schema and the documentation) is licensed under [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](LICENSE). Public-domain sources stay in the public domain, third-party works keep their own terms, and the words themselves belong to their languages and communities: the license covers the documentation of those words, not the words. The exact scope is at the top of [`LICENSE`](LICENSE).
+Sandra Acevedo's original work here (the curation, the annotations, the verification-as-claims layer, the native speaker testimony, the schema and the documentation) is licensed under [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](LICENSE). Public-domain sources stay in the public domain, third-party works keep their own terms, and the words themselves belong to their languages and communities: the license covers the documentation of those words, not the words. The exact scope is in [`LICENSE-SCOPE.md`](LICENSE-SCOPE.md).
 
 Sandra D. Acevedo Alvarado · Independent researcher · Culturally situated AI systems · [acevedology.com](https://acevedology.com) · [contact](https://acevedology.com/contact.html)
 
@@ -157,7 +158,8 @@ El archivo es parte de un proyecto de investigación más amplio sobre NLP cultu
 | [`Data/50chilean-spanish-micro-archive.csv`](Data/50chilean-spanish-micro-archive.csv) | Tabla plana: 50 filas, una por término |
 | [`SCHEMA.md`](SCHEMA.md) | Definición de los campos y vocabularios controlados |
 | [`SOURCES.md`](SOURCES.md) | Estado de consulta de cada fuente |
-| [`LICENSE`](LICENSE) | CC BY-SA 4.0, con el alcance de lo que cubre |
+| [`LICENSE`](LICENSE) | Texto legal de CC BY-SA 4.0 |
+| [`LICENSE-SCOPE.md`](LICENSE-SCOPE.md) | Qué cubre la licencia y qué conserva su propio estado |
 
 ### Alcance
 
@@ -222,6 +224,6 @@ https://gitlab.com/acevedos/chilean-spanish-micro-archive
 
 ### Licencia y contacto
 
-El trabajo original de Sandra Acevedo en este repositorio (la curaduría, las anotaciones, la capa de verificación por afirmaciones, el testimonio de hablante nativa, el esquema y la documentación) se publica bajo licencia [Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)](LICENSE). Las fuentes de dominio público siguen en el dominio público, las obras de terceros conservan sus propios términos, y las palabras mismas pertenecen a sus lenguas y comunidades: la licencia cubre la documentación de esas palabras, no las palabras. El alcance exacto está al inicio de [`LICENSE`](LICENSE).
+El trabajo original de Sandra Acevedo en este repositorio (la curaduría, las anotaciones, la capa de verificación por afirmaciones, el testimonio de hablante nativa, el esquema y la documentación) se publica bajo licencia [Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)](LICENSE). Las fuentes de dominio público siguen en el dominio público, las obras de terceros conservan sus propios términos, y las palabras mismas pertenecen a sus lenguas y comunidades: la licencia cubre la documentación de esas palabras, no las palabras. El alcance exacto está en [`LICENSE-SCOPE.md`](LICENSE-SCOPE.md).
 
 Sandra D. Acevedo Alvarado · Investigadora independiente · Sistemas de IA culturalmente situados · [acevedology.com](https://acevedology.com) · [contacto](https://acevedology.com/contact.html)
